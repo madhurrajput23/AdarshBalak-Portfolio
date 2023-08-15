@@ -32,62 +32,71 @@
 
     <h2>@containers</h2>
 
-    <h3>Fluid container</h3>
-    <div>This is fluid container and it will go till the end of the page. With some margin.</div>
+    <h3>@Fluid container</h3>
+    <div class="container-fluid">This is fluid container and it will go till the end of the page. With some margin.
+    </div>
 
-    <h3>Center container</h3>
-    <div>This is center container. It will go till a given width and center content.</div>
+    <h3>@Center container</h3>
+    <div class="center-container">This is center container. It will go till a given width and center content.</div>
 
     <hr>
 
-    <h2>@links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <h2 class="link">@links</h2>
+    <a href="/" class="link-primary">Primary Link</a>
+    <a href="/" class="link-secondary">Secondary Link</a>
+
+    <br />
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>unordered list</h3>
-    <ul>
+    <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
+    <ul class="unordered">
         <li>Item list 1</li>
         <li>Item list 2</li>
         <li>Item list 3</li>
     </ul>
 
     <h3>Inline unordered list</h3>
-
-    <ul>
+    <p>Instead of going in a new row, we will create a list which will take columns.</p>
+    <ul class="unordered list-inline">
         <li>Inline item list 1</li>
         <li>Inline item list 2</li>
         <li>Inline item list 3</li>
     </ul>
 
     <h3>reverse ordered lists</h3>
-    <ol>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+    <p>Counting of will go reverse for this list</p>
+    <ol reversed>
+        <li>NodeJs</li>
+        <li>ReactJs</li>
+        <li>Javascript</li>
     </ol>
 
     <hr>
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iAmBrand</div>
+    <nav class="navigation">
+        <div class="container-fluid">
+            <div class="brand">iAmBrand</div>
 
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/">Projects</a>
-            </li>
-            <li>
-                <a href="/">Blogs</a>
-            </li>
-        </ul>
+            <ul class="list-inline">
+                <li>
+                    <a href="/" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="/">Projects</a>
+                </li>
+                <li>
+                    <a href="/">Blogs</a>
+                </li>
+            </ul>
+
+        </div>
+
 
     </nav>
 
@@ -95,7 +104,7 @@
 
     <h2>@header</h2>
 
-    <header>
+    <header class="center-container hero">
         <img src="/images/adarshbalak.svg" alt="HeroImg">
         <h1>Frontend Developer</h1>
     </header>
@@ -104,34 +113,39 @@
     <h2>@section</h2>
 
 
-    <section>
+    <section class="section ">
         <h3>@normal white section</h3>
         <p>This will have white background</p>
+        <a href="/" class="link-primary">Primary Link</a>
     </section>
 
-    <section>
+    <section class="section offwhite ">
         <h3>@normal off-white section</h3>
         <p>This will have off-white background</p>
+        <a href="/" class="link-primary">Primary Link</a>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>Heading inside footer</div>
+    <footer class="footer">
+        <div class="center-container    ">
+            <div>Heading inside footer</div>
 
-        <ul>
-            <li>
-                <a href="/">linkedIn</a>
-            </li>
-            <li>
-                <a href="/">github</a>
-            </li>
-            <li>
-                <a href="/">twitter</a>
-            </li>
-        </ul>
+            <ul class="list-inline">
+                <li>
+                    <a href="/">linkedIn</a>
+                </li>
+                <li>
+                    <a href="/">github</a>
+                </li>
+                <li>
+                    <a href="/">twitter</a>
+                </li>
+            </ul>
+        </div>
+
 
     </footer>
 </body>
